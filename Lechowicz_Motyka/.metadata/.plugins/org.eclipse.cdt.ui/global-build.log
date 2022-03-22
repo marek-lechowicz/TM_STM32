@@ -1,0 +1,76 @@
+14:54:06 **** Incremental Build of configuration Debug for project wprowadzenie ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/tim.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/tim.c:123:5: warning: implicit declaration of function 'digit' [-Wimplicit-function-declaration]
+     digit(thousand);
+     ^~~~~
+../Core/Src/tim.c:151:21: error: 'hadc1' undeclared (first use in this function)
+   HAL_ADC_Start_IT(&hadc1);
+                     ^~~~~
+../Core/Src/tim.c:151:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:63: Core/Src/tim.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:54:52 **** Incremental Build of configuration Debug for project wprowadzenie ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/tim.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/tim.c:124:5: warning: implicit declaration of function 'digit' [-Wimplicit-function-declaration]
+     digit(thousand);
+     ^~~~~
+arm-none-eabi-gcc -o "wprowadzenie.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/student/Dokumenty/Lechowicz/wprowadzenie/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="wprowadzenie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: wprowadzenie.elf
+ 
+arm-none-eabi-objdump -h -S  wprowadzenie.elf  > "wprowadzenie.list"
+arm-none-eabi-objcopy  -O binary  wprowadzenie.elf  "wprowadzenie.bin"
+arm-none-eabi-size   wprowadzenie.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14592	     20	   1744	  16356	   3fe4	wprowadzenie.elf
+Finished building: default.size.stdout
+ 
+Finished building: wprowadzenie.bin
+ 
+Finished building: wprowadzenie.list
+ 
+14:56:15 **** Incremental Build of configuration Debug for project wprowadzenie ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/tim.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/tim.c:128:5: warning: implicit declaration of function 'digit' [-Wimplicit-function-declaration]
+     digit(thousand);
+     ^~~~~
+arm-none-eabi-gcc -o "wprowadzenie.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/student/Dokumenty/Lechowicz/wprowadzenie/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="wprowadzenie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: wprowadzenie.elf
+ 
+arm-none-eabi-objdump -h -S  wprowadzenie.elf  > "wprowadzenie.list"
+arm-none-eabi-objcopy  -O binary  wprowadzenie.elf  "wprowadzenie.bin"
+arm-none-eabi-size   wprowadzenie.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14620	     20	   1744	  16384	   4000	wprowadzenie.elf
+Finished building: default.size.stdout
+ 
+Finished building: wprowadzenie.bin
+ 
+Finished building: wprowadzenie.list
+ 
+14:56:42 **** Incremental Build of configuration Debug for project wprowadzenie ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/tim.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/tim.c:128:5: warning: implicit declaration of function 'digit' [-Wimplicit-function-declaration]
+     digit(thousand);
+     ^~~~~
+arm-none-eabi-gcc -o "wprowadzenie.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/student/Dokumenty/Lechowicz/wprowadzenie/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="wprowadzenie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: wprowadzenie.elf
+ 
+arm-none-eabi-objdump -h -S  wprowadzenie.elf  > "wprowadzenie.list"
+arm-none-eabi-objcopy  -O binary  wprowadzenie.elf  "wprowadzenie.bin"
+arm-none-eabi-size   wprowadzenie.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14620	     20	   1744	  16384	   4000	wprowadzenie.elf
+Finished building: default.size.stdout
+ 
+Finished building: wprowadzenie.bin
+ 
+Finished building: wprowadzenie.list
+ 

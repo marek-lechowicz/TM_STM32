@@ -1,0 +1,4 @@
+functions.c:10:6:get_color	184	static
+functions.c:119:6:digit	16	static
+functions.c:233:7:convert_into_digits	24	static
+functions.c:242:6:display_number	24	static

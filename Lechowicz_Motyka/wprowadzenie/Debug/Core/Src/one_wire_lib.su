@@ -1,0 +1,8 @@
+one_wire_lib.c:15:6:delay_us	24	static
+one_wire_lib.c:24:19:wire_reset	16	static
+one_wire_lib.c:41:6:write_bit	16	static
+one_wire_lib.c:56:5:read_bit	16	static
+one_wire_lib.c:68:6:wire_write	24	static
+one_wire_lib.c:77:9:wire_read	16	static
+one_wire_lib.c:89:9:byte_crc	24	static
+one_wire_lib.c:102:9:wire_crc	24	static
