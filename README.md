@@ -4,4 +4,4 @@ Repository for projects created during Microelectronics Technology classes
 
 Authors:
 Kacper Motyka
-Marek Lehcowicz
+Marek Lechowicz
